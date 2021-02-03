@@ -13,10 +13,13 @@
 }
 
 body{
-    background-image: url('imagenes/fondo.jpg');
-    color: #f6efca;    
+ /*    background-image: url('imagenes/fondo.jpg'); */
 }
 
+
+/* --------------------------------------------- */
+
+/* NO ME SIRVIO XD */
 /* ul{
     animation: cambio 1s infinite;
 } */
@@ -31,10 +34,9 @@ body{
     
     60% {margin-left: -200%;}
     95% {margin-left: -200%;}
-
 }
  */
-
+/* ----------------------------------------------*/
 
 
 
@@ -154,7 +156,6 @@ body{
     margin: 0;
     padding: 0;
     list-style: none;
-    position: relative;
 }
 
 .flex-control-nav{
@@ -175,6 +176,9 @@ body{
     height: 15px;
     border-radius: 12px;
     text-indent: -9999px;
+    position: relative;
+    bottom: 70px;
+    z-index: 999;
 }
 
 .flex-control-nav li a:hover{
@@ -182,32 +186,32 @@ body{
 }
 
 .flex-control-nav li a.flex-active{
-    background: #4c0505;
+    background: #d21209;
 }
 
 .flex-direction-nav a{
     display: block;
     text-decoration: none;
     position: absolute;
-    top: -27px;
-    z-index: 999;
+    top: 40%;
+    z-index: 999; /* para que aparezca por encima de la imagen */
     width: 40px;
     height: 40px;
     overflow: hidden;
-    margin: 0 70px;
     
 }
 
 
-
-
-.flex-direction-nav .flex-prev::before{
-    margin-left: 20px ;
+.flex-direction-nav .flex-prev{
+    left: 0;
 }
 
+.flex-direction-nav .flex-next{
+    right: 0;
+}
 .flex-direction-nav a:before{
     font-family: "flexslider-icon";
-    font-size: 30px;
+    font-size: 40px;
     display: inline-block;
     content: '\f001';
     color:  #f6efca;
@@ -218,4 +222,4 @@ body{
     content: '\f002';
 }
 
-
+ 
